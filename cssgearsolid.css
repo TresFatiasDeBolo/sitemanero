@@ -1,0 +1,125 @@
+:root {
+
+    --preto-total: #000000;
+    --cinza-escuro: #3a3a3a;
+    --cinza: #5f5f5f;
+    --cinza-claro: #929292;
+    --branco: #e4e4e4;
+    --branco-total: #ffffff;
+    --violeta: #5b00b1;
+    --purpura: #b600e4;
+    --rosa-choque: #ff22c8;
+    --rosa-claro:#fd89d1;
+    --azul-claro: #5cccf8;
+    --ciano: #06a7a7;
+    --azul-escuro: #0a43be;
+    --azul-futuro: #007eaf;
+    --vermelho: #e70000;
+    --vermelho-escuro: #7c0000;
+    --bege: #886464;
+    --amarelo: #fdd700;
+    --amarelo-podre: #87a500;
+    --dourado: #daa001;
+    --laranja-solido: #ff5e00;
+    --marrom-escuro: #632700;
+    --marrom-mais-escuro: #471d00;
+    --marrom-claro: #b65200;
+    --verde-escuro: #006308;
+    --verde-claro: #00b818;
+    
+}
+
+#body {
+    background-image: url(vilaescura.jpg);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('vilaescura.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 100%;
+}
+
+
+#frasecontexto {
+    font-size: 35px;
+    text-align: center;
+    color: var(--marrom-claro);
+    background-color: rgba(90, 49, 16, 0.6);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin: 7.5%;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    cursor: default;
+ }
+
+ #botaocontexto {
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    margin: auto;
+    display: block;
+    background-color: var(--marrom-escuro);
+    color: var(--marrom-claro);
+    transition-duration: 0.8s;
+    border-radius: 1px;
+    animation-name: fade-in;
+    animation-duration: 3s;
+ }
+
+ #botaocontexto:hover {
+    color: var(--marrom-claro);
+    background-color: var(--marrom-mais-escuro);
+    cursor: pointer;
+ }
+
+ #contexto {
+    text-align: center;
+    color: var(--marrom-claro);
+    font-size: 30px;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    cursor: default;
+    margin-top: 50px;
+ }
+
+ #fadenormal {
+    background-color: var(--branco-total);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background:var(--branco-total);
+    top: 0;
+    left: 0;
+    display: none;
+    animation: fade-in 1s, fade-out 1s;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: forwards;
+  }
+
+ @keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+ }
+
+ @keyframes fade-out {
+   from {opacity: 100%;}
+   to {opacity: 0%;}
+ }
+
+ .conflito {
+    font-size: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin: 7.5%;
+    background-color: rgba(90, 49, 16, 0.6);
+    display: none;
+ }
+
+ .escolha1 {
+    display: none;
+ }
+
+.escolha2 {
+    display: none;
+}

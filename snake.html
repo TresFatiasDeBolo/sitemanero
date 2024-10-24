@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Gear Solid</title>
+    <link rel="stylesheet" href="cssgearsolid.css">
+    <link rel="shortcut icon" href="solidsnake.jpg" type="image/x-icon">
+</head>
+<body id="body">
+    
+    <h1 id="contexto">---CONTEXTO---</h1>
+
+    <div id="frasecontexto">
+        A história se passa em eras antigas, quando os reis e imperadores ainda
+        governavam a terra. Porém, nessas terras, nem tudo é tão
+        antigo quanto parece ser. Você é um mercador fabricante de poções que
+         está escrevendo a anos um livro de receitas.
+    </div>
+
+    <button id="botaocontexto" onclick="iniciar()">COMECE!</button>
+
+    <div id="fadenormal"></div>
+
+    <div class="conflito"></div>
+
+    <button class="escolha1"></button>
+
+    <button class="escolha2"></button>
+
+    <!-- DESCUBRA UMA MANEIRA DE FAZER ESSA FUNÇÃO ESPERAR!!!
+     e depois crie uma função geral para todas as perguntas
+     vai la vc consegue :) -->
+
+    <script>
+        function iniciar() {
+            const botaocontx = document.getElementById("botaocontexto");
+            const contx = document.getElementById("contexto");
+            const frasecontx = document.getElementById("frasecontexto");
+            const img2 = document.getElementsByName("solidsnake.jpg")
+
+            document.getElementById("fadenormal").style.display = 'block'
+            setTimeout(iniciar, 1000); {
+                document.getElementById("body").style.backgroundImage = 'url(solidsnake.jpg)'
+            frasecontx.remove();
+            contx.remove();
+            botaocontx.remove();
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
